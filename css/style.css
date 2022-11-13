@@ -1,0 +1,75 @@
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --font-primery: 'Poppins', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.125rem;
+    background: var(--Violet);
+}
+
+main{
+    background: var(--Violet) url("../images/bg-mobile.svg") no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.img-logo{
+    width: 150px;
+}
+
+.edited-txt{
+    font-family: var(--font-primery);
+}
+.edited-txt h1{
+    font-weight: 600;
+}
+
+.btn{
+    background: #fff;
+    color: var(--Violet);
+    font-size: 1.125rem;
+    font-family: var(--font-primery);
+    transition: all 300ms ease-in-out;
+}
+.btn:hover{
+    background: var(--Soft-Magenta);
+    color: #fff;
+    transform: scale(1.1);
+    transition: all 300ms ease-in-out;
+}
+.btn-i{
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #fff;
+}
+.btn-i i{
+    font-size: 20px;
+}
+.btn-i:hover{
+    color: var(--Soft-Magenta);
+    border-color: var(--Soft-Magenta);
+    transform: scale(1.1);
+    transition: all 300ms ease-in-out;
+}
+
+
+@media (min-width: 375px){
+}
+@media (min-width: 768px){
+    main{
+        background: var(--Violet) url("../images/bg-desktop.svg") no-repeat;
+    }
+    
+}
